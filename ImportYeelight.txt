@@ -1,0 +1,37 @@
+#Import Yeelight for HeartRate Zones Green Yellow Red:
+
+TRY
+pip install yeelight
+
+#Import a bulb:
+
+>>> from yeelight import Bulb
+>>> bulb = Bulb("192.168.0.19")
+
+# Turn the bulb on.
+>>> bulb.turn_on()
+
+# Turn the bulb off.
+>>> bulb.turn_off()
+
+# Toggle power.
+>>> bulb.toggle()
+
+# Set brightness to 50%.
+>>> bulb.set_brightness(50)
+
+# Set RGB value.
+>>> bulb.set_rgb(255, 0, 0)
+
+# Set HSV value.
+>>> bulb.set_hsv(320, 100, 50)
+
+# Set hue and saturation, but keep value (brightness) the same.
+>>> bulb.set_hsv(320, 100)
+
+# Set color temperature.
+>>> bulb.set_color_temp(4700)
+
+# Save this setting as default.
+>>> bulb.set_default()
+
