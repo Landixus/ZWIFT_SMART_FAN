@@ -35,7 +35,7 @@ Herzschwelle2=90
 Herzschwelle3=100
 Herz_Hyst=2
 
-cli = Client('mudda@quakeit.de','Recall1234')
+cli = Client('YourMailAdress','YourPassword')
 world = cli.get_world()
 players = world.players
 friends= players['friendsInWorld']
