@@ -37,11 +37,23 @@ while True:
     if Herzfrequenz >= Herzschwelle1:
         bulb.set_rgb(0, 255, 0)
         time.sleep(1)
+    else:
+        if Herzfrequenz <= (Herzschwelle1-Herz_Hyst):
+            bulb.set_rgb(0, 255, 0)
+            time.sleep(1)
 
     if Herzfrequenz >= Herzschwelle2:
         bulb.set_rgb(255, 255, 0)
         time.sleep(1)
+    else:
+        if Herzfrequenz <= (Herzschwelle2-Herz_Hyst):
+            bulb.set_rgb(255, 255, 0)
+            time.sleep(1)
 
     if Herzfrequenz >= Herzschwelle3:
         bulb.set_rgb(255, 0, 0)
         time.sleep(1)
+    else:
+        if Herzfrequenz <= (Herzschwelle3-Herz_Hyst):
+            bulb.set_rgb(255, 0, 0)
+            time.sleep(1)
